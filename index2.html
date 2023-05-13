@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>個人自我介紹網頁</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+  <body>
+    <!-- 主頁 -->
+    <div data-role="page" id="home">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">主頁</a></li>
+          <li><a href="#hobbies" data-icon="star">興趣愛好</a></li>
+          <li><a href="#experience" data-icon="info">學歷經歷</a></li>
+          <li><a href="#assignments" data-icon="grid">作業列表</a></li>
+        </ul>
+      </div>
+      <div data-role="header">
+        <h1>個人自我介紹</h1>
+      </div>
+      <div data-role="content">
+        <!-- 在這裡放置您的個人資訊 -->
+        <h2>基本資訊</h2>
+        <ul data-role="listview">
+          <li>
+            <h3>姓名</h3>
+            <p>王小明</p>
+          </li>
+          <li>
+            <h3>性別</h3>
+            <p>男</p>
+          </li>
+          <li>
+            <h3>年齡</h3>
+            <p>28歲</p>
+          </li>
+          <li>
+            <h3>電子郵件</h3>
+            <p>wangxm@gmail.com</p>
+          </li>
+        </ul>
+      </div>
+      <div data-role="footer">
+        <h4>版權聲明</h4>
+      </div>
+    </div>
+
+    <!-- 興趣愛好頁 -->
+    <div data-role="page" id="hobbies">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">主頁</a></li>
+          <li><a href="#hobbies" data-icon="star">興趣愛好</a></li>
+          <li><a href="#experience" data-icon="info">學歷經歷</a></li>
+          <li><a href="#assignments" data-icon="grid">作業列表</a></li>
+        </ul>
+      </div>
+      <div data-role="header">
+        <h1>興趣愛好</h1>
+      </div>
+      <div data-role="content">
+        <!-- 在這裡放置您的興趣愛好 -->
+
+        <h2>喜愛的運動</h2>
+        <p>我喜歡打籃球，每周至少打一次球。</p>
+
+        <h2>閱讀習慣</h2>
+        <p>我喜歡閱讀科技類書籍，最近在讀《深度工作》這本書。</p>
+
+        <h2>旅遊經驗</h2>
+        <p>我喜歡旅遊，曾經去過日本、泰國和新加坡。</p>
+      </div>
+      <div data-role="footer">
+        <h4>版權聲明</h4>
+      </div>
+    </div>
+
+    <!-- 學歷經歷頁 -->
+    <div data-role="page" id="experience">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">主頁</a></li>
+          <li><a href="#hobbies" data-icon="star">興趣愛好</a></li>
+          <li><a href="#experience" data-icon="info">學歷經歷</a></li>
+          <li><a href="#assignments" data-icon="grid">作業列表</a></li>
+        </ul>
+      </div>
+      <div data-role="header">
+        <h1>學歷經歷</h1>
+      </div>
+      <div data-role="content">
+        <!-- 在這裡放置您的學歷經歷 -->
+        <h2>學歷</h2>
+        <ul data-role="listview">
+          <li>
+            <h3>國立台灣大學</h3>
+            <p>資訊工程學系學士學位，2014-2018年</p>
+          </li>
+          <li>
+            <h3>國立清華大學</h3>
+            <p>資訊工程學系碩士學位，2018-2020年</p>
+          </li>
+        </ul>
+
+        <h2>經歷</h2>
+        <ul data-role="listview">
+          <li>
+            <h3>Google</h3>
+            <p>軟體工程師，2020年至今</p>
+          </li>
+          <li>
+            <h3>Microsoft</h3>
+            <p>實習生，2019年</p>
+          </li>
+        </ul>
+      </div>
+      <div data-role="footer">
+        <h4>版權聲明</h4>
+      </div>
+    </div>
+
+    <!-- 作業列表頁 -->
+    <div data-role="page" id="assignments">
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#home" data-icon="home">主頁</a></li>
+          <li><a href="#hobbies" data-icon="star">興趣愛好</a></li>
+          <li><a href="#experience" data-icon="info">學歷經歷</a></li>
+          <li><a href="#assignments" data-icon="grid">作業列表</a></li>
+        </ul>
+      </div>
+      <div data-role="header">
+        <h1>作業列表</h1>
+      </div>
+      <div data-role="content">
+        <label for="select-choice-1" class="select">選擇作業:</label>
+        <select
+          name="select-choice-1"
+          id="select-choice-1"
+          data-native-menu="false"
+        >
+          <option value="#">請選擇</option>
+          <option value="https://appjust.github.io/hw1/">作業1</option>
+          <option value="https://appjust.github.io/hw2/">作業2</option>
+          <option value="https://appjust.github.io/hw3/">作業3</option>
+          <option value="https://appjust.github.io/hw4/">作業4</option>
+          <option value="https://appjust.github.io/hw5/">作業5</option>
+          <option value="https://appjust.github.io/hw6/">作業6</option>
+          <option value="https://appjust.github.io/hw7/">作業7</option>
+          <option value="https://appjust.github.io/hw8/">作業8</option>
+        </select>
+        <div id="assignment-content"></div>
+      </div>
+      <div data-role="footer">
+        <h4>版權聲明</h4>
+      </div>
+    </div>
+
+    <script>
+      $(document).ready(function () {
+        $("#select-choice-1").on("change", function () {
+          $("#assignment-content").html(
+            '<iframe src="' +
+              $(this).val() +
+              '" width="100%" height="500px"></iframe>'
+          );
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        // 頁面的 ID
+        var pageArray = ["#home", "#hobbies", "#experience", "#assignments"];
+        // 目前的頁面索引
+        var currentPageIndex = 0;
+
+        // 當在任何一個頁面上向左滑動時
+        $(document).on("swipeleft", ".ui-page", function () {
+          currentPageIndex = (currentPageIndex + 1) % pageArray.length;
+          $.mobile.navigate(pageArray[currentPageIndex]);
+        });
+
+        // 當在任何一個頁面上向右滑動時
+        $(document).on("swiperight", ".ui-page", function () {
+          currentPageIndex =
+            (currentPageIndex - 1 + pageArray.length) % pageArray.length;
+          $.mobile.navigate(pageArray[currentPageIndex]);
+        });
+      });
+    </script>
+  </body>
+</html>
